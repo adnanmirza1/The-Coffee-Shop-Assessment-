@@ -34,8 +34,8 @@ This is a simple e-commerce application built with Ruby on Rails. The applicatio
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/adnanmirza1/The-Coffee-Shop-Assessment-.git
+   cd The-Coffee-Shop-Assessment
    ```
 
 2. **Install dependencies:**
