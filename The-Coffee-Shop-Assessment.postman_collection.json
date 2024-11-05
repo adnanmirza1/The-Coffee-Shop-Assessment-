@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "1811ea37-3e66-4889-9fc8-cf8c379c6425",
+		"name": "The-Coffee-Shop-Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26230598",
+		"_collection_link": "https://martian-flare-612681.postman.co/workspace/New-Team-Workspace~5a7b676a-1823-42bd-b0d1-716438d320f1/collection/26230598-1811ea37-3e66-4889-9fc8-cf8c379c6425?action=share&source=collection_link&creator=26230598"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/users"
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/users/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n        \"name\": \"jhon doe\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/users/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n      \"user\": {\n        \"name\": \"John Doe last\",\n        \"email\": \"john12@example.com\"\n      }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/users"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "items",
+			"item": [
+				{
+					"name": "All_items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/items"
+					},
+					"response": []
+				},
+				{
+					"name": "item_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/items/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/items/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update_item",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"item\": {\n        \"name\": \"updated item 1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/items/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create_item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n    \"item\": {\n      \"name\": \"Sample Item\",\n      \"item_type\": \"Type A\",\n      \"price\": 10.0,\n      \"tax_rate\": 0.05\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/items"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "inventories",
+			"item": [
+				{
+					"name": "All_inventories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/inventories"
+					},
+					"response": []
+				},
+				{
+					"name": "Show_inventory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/inventories/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update_inventory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"inventory\": {\n      \"quantity\": 100\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/inventories/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create_inventory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"inventory\": {\n      \"quantity\": 150\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/inventories"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_inventory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/inventories/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "All_orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Order_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/orders/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update_order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"total\": \"35.0\",\n    \"status\": \"completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/orders/1"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/orders/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create_order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"order\": {\n    \"user_id\": 1,\n    \"total\": \"20.0\",  // This should be a number, not a string\n    \"status\": \"completed\",\n    \"date\": \"2024-11-05T08:48:02.282Z\"  // This is a valid ISO 8601 date format\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/orders"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discounts",
+			"item": [
+				{
+					"name": "All_discounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/discounts"
+					},
+					"response": []
+				},
+				{
+					"name": "Show_discount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/discounts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"discount\": {\n      \"item_id\": 1,\n      \"group_discount_id\": 1,\n      \"discount_type\": \"Flat\",\n      \"discount_percentage\": 5.0\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/discounts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"discount\": {\n      \"item_id\": 1,\n      \"group_discount_id\": 1,\n      \"discount_type\": \"Percentage\",\n      \"discount_percentage\": 10.0\n    }\n  }\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/discounts"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/discounts/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Group Discounts",
+			"item": [
+				{
+					"name": "Group Discounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/group_discounts"
+					},
+					"response": []
+				},
+				{
+					"name": "Show_discount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/group_discounts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create_discount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group_discount\": {\n      \"name\": \"Discount Group 1\"\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/group_discounts"
+					},
+					"response": []
+				},
+				{
+					"name": "Update_discount",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group_discount\": {\n      \"name\": \"Updated Discount Group\"\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/group_discounts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/group_discounts/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wallets",
+			"item": [
+				{
+					"name": "All_wallets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/wallets"
+					},
+					"response": []
+				},
+				{
+					"name": "Show_wallet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/wallets/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create_wallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"wallet\": {\n      \"user_id\": 1,\n      \"balance\": 100.0\n    }\n  }\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/wallets"
+					},
+					"response": []
+				},
+				{
+					"name": "Update_wallet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"wallet\": {\n      \"user_id\": 1,\n      \"balance\": 150.0\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/wallets/1"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/wallets/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
